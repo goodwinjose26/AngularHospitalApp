@@ -6,6 +6,22 @@ import { AppComponent } from './app.component';
 import { PateintEntryComponent } from './pateint-entry/pateint-entry.component';
 import { PateintSearchComponent } from './pateint-search/pateint-search.component';
 import { PateintDeleteComponent } from './pateint-delete/pateint-delete.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:PateintEntryComponent
+  },
+  {
+    path:"search",
+    component:PateintSearchComponent
+  },
+  {
+    path:"delete",
+    component:PateintDeleteComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -16,7 +32,8 @@ import { PateintDeleteComponent } from './pateint-delete/pateint-delete.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]

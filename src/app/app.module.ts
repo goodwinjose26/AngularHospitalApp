@@ -8,6 +8,7 @@ import { PateintSearchComponent } from './pateint-search/pateint-search.componen
 import { PateintDeleteComponent } from './pateint-delete/pateint-delete.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PateintViewComponent } from './pateint-view/pateint-view.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -34,7 +35,8 @@ const myRoute:Routes=[
     PateintEntryComponent,
     PateintSearchComponent,
     PateintDeleteComponent,
-    PateintViewComponent
+    PateintViewComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

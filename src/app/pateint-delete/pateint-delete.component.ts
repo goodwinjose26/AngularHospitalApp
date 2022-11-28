@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./pateint-delete.component.css']
 })
 export class PateintDeleteComponent {
+name=""
+  deleteValues =()=>
+  {
+    let data:any =
+    {
+      "name":this.name
+    }
+    console.log(data)
+  }
 
 }

@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./pateint-search.component.css']
 })
 export class PateintSearchComponent {
+  name=""
+  searchValues =()=>
+  {
+    let data:any =
+    {
+      "name":this.name
+    }
+    console.log(data)
+  }
+
 
 }
